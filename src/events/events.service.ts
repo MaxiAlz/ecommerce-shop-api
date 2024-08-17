@@ -33,10 +33,10 @@ export class EventsService {
   }
 
   async findAll(paginationDto: PaginationDto) {
-    const { limit = 10, offset = 0 } = paginationDto;
+    const { limit = 10, page = 0 } = paginationDto;
     return await this.eventRepository.find({
       take: limit,
-      skip: offset,
+      skip: page,
       // TODO: Relaciones
     });
   }

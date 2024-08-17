@@ -20,5 +20,5 @@ export class CreateEventDto {
 
   @IsString()
   @IsOptional()
-  adressDesciption?: string;
+  adress_desciption?: string;
 }

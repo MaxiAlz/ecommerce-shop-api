@@ -27,7 +27,7 @@ export class Event {
   slug: string;
 
   @Column('text', { nullable: true })
-  adressDesciption: string;
+  adress_desciption: string;
 
   @Column('text', { default: 'ATP' })
   publicType?: string;
